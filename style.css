@@ -9,6 +9,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: 24px;
     margin-bottom: 20px;
 }
 
@@ -25,7 +26,7 @@ nav {
 }
 
 .menu {
-    margin-left: 350px;
+    margin-left: 150px;
 }
 
 .menu ul {
@@ -44,6 +45,7 @@ nav {
 
 .btn {
     display: flex;
+    margin-right: 25px;
     gap: 15px;
 }
 
@@ -52,7 +54,7 @@ nav {
     border: none;
     color: #043873;
     padding: 15px 20px;
-    font-size: 14px;
+    font-size: 22px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -62,7 +64,7 @@ nav {
     border: none;
     color: #ffffff;
     padding: 15px 20px;
-    font-size: 14px;
+    font-size: 22px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -75,8 +77,15 @@ nav {
 
 .project_management {
     margin-top: 100px;
-    margin-left: 100px;
     color: white;
+}
+
+.konten_management h1 {
+    font-size: 50px;
+}
+
+.hero {
+    background: url("element_garis.svg") no-repeat right center / cover;
 }
 
 .image {
@@ -101,6 +110,21 @@ nav {
 .konten-project {
     margin-top: 50px;
     margin-left: 50px;
+    background-image: url("element-underline.svg");
+    background-repeat: no-repeat;
+    background-position: left 40px;
+    background-size: 500px 180px;
+}
+
+.konten-project h1 {
+    font-size: 50px;
+}
+
+.hero-bulet {
+    background: url("element-bulet.svg");
+    background-repeat: no-repeat;
+    background-position: left top 100px;
+    background-size: 300px;
 }
 
 .img {
@@ -126,11 +150,30 @@ nav {
 .work-together {
     margin-top: 100px;
     background-color: white;
+    background: url("element-underline.svg") no-repeat;
+    background-size: 350px;
+    background-position: left 130px top 60px;
 }
 
 .work-together {
     margin-top: 100px;
     margin-left: 100px;
+}
+
+.work-together h1 {
+    font-size: 50px;
+}
+
+.work-everywhere{
+    background: url("element-bulet-2.svg") no-repeat;
+    background-position: left;
+    background-size: 400px;
+}
+
+.text-work {
+    background: url("element-underline-biru.svg") no-repeat;
+    background-position: left 850px top 40px;
+    background-size: 220px;
 }
 
 .foto {
@@ -161,6 +204,13 @@ nav {
 .konten-extension {
     margin-top: 30px;
     margin-left: 50px;
+    background: url("element-underline.svg") no-repeat;
+    background-position: left 180px top 56px;
+    background-size: 350px;
+}
+
+.konten-extension h1 {
+    font-size: 50px;
 }
 
 .btn-whitepace {
@@ -184,6 +234,13 @@ nav {
 .konten-customise {
     margin-top: 120px;
     margin-left: 100px;
+    background: url("element-underline.svg") no-repeat;
+    background-position: left top 108px;
+    background-size: 450px;
+}
+
+.konten-customise h1 {
+    font-size: 50px;
 }
 
 .image-customise {
@@ -205,6 +262,12 @@ nav {
     cursor: pointer;
     border-radius: 4px;
     margin-left: 5px;
+}
+
+.text-plan {
+    background: url("element-underline.svg") no-repeat;
+    background-position: left 660px top 23px;
+    background-size: 350px;
 }
 
 .content6 {
@@ -288,6 +351,7 @@ nav {
     margin-bottom: 50px;
 }
 
+
 .data {
     margin-top: 100px;
     color: #000000;
@@ -297,6 +361,13 @@ nav {
 .konten-data {
     margin-top: 100px;
     margin-left: 80px;
+    background: url("element-underline.svg") no-repeat;
+    background-position: left 130px top 56px;
+    background-size: 380px;
+}
+
+.konten-data h1{
+    font-size: 50px;
 }
 
 .image-data {
@@ -328,6 +399,12 @@ nav {
     margin-bottom: 50px;
 }
 
+.text-sponsor{
+    background: url("element-underline.svg") no-repeat;
+    background-position: left 610px top 27px;
+    background-size: 350px;
+}
+
 .sponsor img {
     width: 100%;
     height: auto;
@@ -347,6 +424,10 @@ nav {
     margin-left: 50px;
 }
 
+.konten-work h1{
+    font-size: 50px;
+}
+
 .btn-work {
     background-color: #4F9CF9;
     border: none;
@@ -363,7 +444,13 @@ nav {
 .client {
     margin-top: 100px;
     padding: 80px 0;
-    background: #fff;
+    background: #fff;  
+}
+
+.text-says{
+    background: url("underline-says.svg") no-repeat;
+    background-position: left 800px top 19px;
+    background-size: 200px;
 }
 
 .client h1 {
@@ -417,13 +504,13 @@ nav {
 .jabatan h3 {
     margin-bottom: 8px;
     font-size: 18px;
+    color: #043873;
 }
 
 .jabatan p {
     font-size: 14px;
     line-height: 22px;
 }
-
 
 .biru {
     background-color: #4F9CF9;
