@@ -1,105 +1,118 @@
 body {
-    background-color: #043873;
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    background: #043873;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 219px;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 24px;
-    margin-bottom: 20px;
 }
 
 .logo h1 {
-    font-size: 28px;
     color: white;
+    font-size: 28px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
-}
-
-.menu {
-    margin-left: 150px;
+    gap: 40px;
 }
 
 .menu ul {
     display: flex;
+    gap: 25px;
     list-style: none;
-    gap: 30px;
     margin: 0;
     padding: 0;
 }
 
-.menu ul li a {
-    color: #ffffff;
+.menu a {
+    color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .btn {
     display: flex;
-    margin-right: 25px;
     gap: 15px;
 }
 
 .btn-login {
-    background-color: #FFE492;
+    background: #FFE492;
     border: none;
-    color: #043873;
-    padding: 15px 20px;
-    font-size: 22px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 .btn-try {
-    background-color: #4F9CF9;
-    border: none;
-    color: #ffffff;
-    padding: 15px 20px;
-    font-size: 22px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
-}
-
-.project_management {
-    margin-top: 100px;
+    background: #4F9CF9;
     color: white;
-}
-
-.konten_management h1 {
-    font-size: 50px;
+    font-size: 18px;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .hero {
-    background: url("element_garis.svg") no-repeat right center / cover;
+    background: url("element_garis.svg") no-repeat right center;
+    background-size: cover;
 }
 
-.image {
-    min-width: 500px;
-    height: 300px;
-    margin-right: 100px;
-    background-color: #C4DEFD;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
 }
 
-.image-kosong {
-    width: 600px;
-    height: 300px;
-    background-color: #C4DEFD;
-    margin-right: 100px;
+.hero .container,
+.management .container,
+.extension .container,
+.customise .container,
+.data .container,
+.work .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.konten_management {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(-130px);
+}
+
+.konten_management h1 {
+    color: white;
+    font-size: 64px;
+}
+
+.konten_management p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.8;
+}
+
+.image-kosong img {
+    width: 824px;
+    height: 549px;
+    transform: translateX(135px);
 }
 
 .management {
@@ -108,16 +121,30 @@ nav {
 }
 
 .konten-project {
-    margin-top: 50px;
-    margin-left: 50px;
-    background-image: url("element-underline.svg");
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(-133px);
+    gap: 10px;
+    background: url("element-underline.svg") no-repeat;
     background-position: left 40px;
     background-size: 500px 180px;
 }
 
 .konten-project h1 {
-    font-size: 50px;
+    font-size: 64px;
+}
+
+.konten-project p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.image-project img {
+    width: 824px;
+    height: 549px;
+    transform: translateX(65px);
 }
 
 .hero-bulet {
@@ -148,25 +175,37 @@ nav {
 }
 
 .work-together {
-    margin-top: 100px;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
     background: url("element-underline.svg") no-repeat;
     background-size: 350px;
     background-position: left 130px top 60px;
 }
 
-.work-together {
-    margin-top: 100px;
-    margin-left: 100px;
+.work-together h1{
+    font-size: 64px;
+}
+
+.work-together p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.foto img {
+    transform: translateX(-133px);
 }
 
 .work-together h1 {
     font-size: 50px;
 }
 
-.work-everywhere{
+.work-everywhere {
     background: url("element-bulet-2.svg") no-repeat;
     background-position: left;
+    padding: 100px;
     background-size: 400px;
 }
 
@@ -174,12 +213,6 @@ nav {
     background: url("element-underline-biru.svg") no-repeat;
     background-position: left 850px top 40px;
     background-size: 220px;
-}
-
-.foto {
-    width: 90%;
-    height: 90%;
-    margin-left: 90px;
 }
 
 .btn-now {
@@ -196,21 +229,27 @@ nav {
 }
 
 .extension {
-    margin-top: 100px;
-    margin-left: 50px;
     color: white;
 }
 
 .konten-extension {
-    margin-top: 30px;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
     background: url("element-underline.svg") no-repeat;
     background-position: left 180px top 56px;
     background-size: 350px;
 }
 
 .konten-extension h1 {
-    font-size: 50px;
+    font-size: 64px;
+}
+
+.konten-extension p {
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 .btn-whitepace {
@@ -227,28 +266,33 @@ nav {
 }
 
 .customise {
-    margin-top: 100px;
     background-color: white;
 }
 
 .konten-customise {
-    margin-top: 120px;
-    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
     background: url("element-underline.svg") no-repeat;
     background-position: left top 108px;
     background-size: 450px;
 }
 
 .konten-customise h1 {
-    font-size: 50px;
+    font-size: 64px;
+}
+
+.konten-customise p {
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 .image-customise {
-    min-width: 500px;
-    height: 300px;
-    margin-left: 50px;
-    margin-top: 100px;
-    background-color: #C4DEFD;
+    width: 100%;
+    height: 420px;
+    transform: translateX(-130px);
 }
 
 .btn-customise {
@@ -270,9 +314,17 @@ nav {
     background-size: 350px;
 }
 
-.content6 {
+.text-plan h1 {
+    text-align: center;
     margin-top: 100px;
-    background-color: white;
+    font-size: 64px;
+}
+
+.text-plan p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .card {
@@ -351,7 +403,6 @@ nav {
     margin-bottom: 50px;
 }
 
-
 .data {
     margin-top: 100px;
     color: #000000;
@@ -359,22 +410,27 @@ nav {
 }
 
 .konten-data {
-    margin-top: 100px;
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
     background: url("element-underline.svg") no-repeat;
     background-position: left 130px top 56px;
     background-size: 380px;
 }
 
-.konten-data h1{
-    font-size: 50px;
+.konten-data h1 {
+    font-size: 64px;
 }
 
-.image-data {
-    width: 90%;
-    height: 90%;
-    margin-left: 90px;
-    margin-top: 100px;
+.konten-data p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.image-data img {
+    transform: translateX(175px);
 }
 
 .btn-data {
@@ -399,33 +455,40 @@ nav {
     margin-bottom: 50px;
 }
 
-.text-sponsor{
+.text-sponsor {
     background: url("element-underline.svg") no-repeat;
     background-position: left 610px top 27px;
     background-size: 350px;
 }
 
 .sponsor img {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: auto;
     margin-bottom: 50px;
 }
 
 .work {
-    margin-top: 100px;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
     color: white;
     margin-bottom: 10px;
 }
 
-.konten-work {
-    margin-top: 15px;
-    margin-left: 50px;
+.konten-work h1 {
+    font-size: 64px;
 }
 
-.konten-work h1{
-    font-size: 50px;
+.konten-work p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.image-work img {
+      transform: translateX(-133px);
 }
 
 .btn-work {
@@ -444,10 +507,10 @@ nav {
 .client {
     margin-top: 100px;
     padding: 80px 0;
-    background: #fff;  
+    background: #fff;
 }
 
-.text-says{
+.text-says {
     background: url("underline-says.svg") no-repeat;
     background-position: left 800px top 19px;
     background-size: 200px;
@@ -456,14 +519,6 @@ nav {
 .client h1 {
     text-align: center;
     margin-bottom: 60px;
-}
-
-.container {
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
 }
 
 .container-client {
@@ -639,9 +694,4 @@ nav {
     display: flex;
     gap: 20px;
     margin-right: 100px;
-}
-
-.image-work img {
-    width: 85%;
-    height: 85%;
 }
