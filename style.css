@@ -239,7 +239,6 @@ nav {
 .work-everywhere {
     background: url("element-bulet-2.svg") no-repeat;
     background-position: left;
-    padding: 100px;
     background-size: 400px;
 }
 
@@ -487,15 +486,13 @@ nav {
     background-color: #4F9CF9;
     color: #ffffff;
     padding: 15px 20px;
+    display: block;
+    margin: 25px auto 50px;
     border: none;
-    margin-left: 46%;
-    text-align: center;
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
-    margin-top: 25px;
-    margin-bottom: 50px;
 }
 
 .data {
@@ -820,7 +817,7 @@ nav {
 }
 
 .menu-whitepace {
-    width: 260px;
+    width: 288px;
 }
 
 .menu-product p,
@@ -947,7 +944,7 @@ nav {
 
     .text-work {
         background: url("element-underline-biru.svg") no-repeat;
-        background-position: right 250px top 40px;
+        background-position: right 315px top 40px;
         background-size: 200px;
     }
 
@@ -1184,6 +1181,16 @@ nav {
         display: none;
     }
 
+    .btn-try-whitepace {
+        background: #4F9CF9;
+        color: white;
+        font-size: 15px;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
     .hero .container,
     .management .container,
     .extension .container,
@@ -1228,6 +1235,50 @@ nav {
         justify-content: flex-start;
     }
 
+    .client .container {
+        display: flex !important;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .client .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container-client {
+        min-width: 350px;
+    }
+
+    .card {
+        display: flex !important;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .card::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-free,
+    .card-personal,
+    .card-organization {
+        min-width: 400px;
+    }
+
     .sponsor {
         display: flex;
         flex-direction: column;
@@ -1251,6 +1302,33 @@ nav {
         justify-content: center;
     }
 
+    .management .container:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-together {
+        order: 1;
+    }
+
+    .foto {
+        order: 2;
+    }
+
+
+    .data .container:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .konten-data {
+        order: 2;
+    }
+
+    .image-data {
+        order: 1;
+    }
+
     .image-kosong img,
     .image-project img,
     .image-extension img,
@@ -1259,14 +1337,370 @@ nav {
     .image-work img,
     .foto img {
         width: 100%;
-        max-width: 500px;
+        max-width: 540px;
         height: auto;
     }
+
 
     .menu-footer .container {
         max-width: 728px;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .konten-project h1,
+    .work-together h1,
+    .konten_management h1,
+    .konten-extension h1,
+    .konten-customise h1,
+    .konten-data h1,
+    .footer-content h1,
+    .konten-work h1 {
+        font-size: 54px;
+    }
+
+
+    .text-plan h1,
+    .text-sponsor h1,
+    .text-says h1 {
+        font-size: 54px;
+    }
+
+    .konten_management p,
+    .konten-project p,
+    .work-together p,
+    .konten-extension p,
+    .menu-whitepace p,
+    .menu-product p,
+    .menu-resources p,
+    .menu-company p,
+    .menu-try p,
+    .konten-work p,
+    .footer-content p {
+        font-size: 18px;
+        max-width: 728px;
+    }
+
+    .konten-data p {
+        font-size: 17px;
+        max-width: 728px;
+    }
+
+    .text-work h1 {
+        text-align: left;
+        margin-top: 100px;
+        color: #fff;
+        font-size: 58px;
+        padding-left: 20px;
+    }
+
+    .text-work p {
+        text-align: left;
+        margin-top: 20px;
+        color: #fff;
+        line-height: 1.8;
+        font-size: 17px;
+        padding-left: 19px;
+    }
+
+    .sponsor img {
+        width: 190px;
+        height: auto;
+    }
+
+    .btn-taskey {
+        margin: 25px 0 50px 20px;
+    }
+
+    .konten-extension {
+        background: url("element-underline.svg");
+        background-repeat: no-repeat;
+        background-position: left 350px top 60px;
+        background-size: 400px;
+    }
+
+    .konten-project {
+        background: url("element-underline.svg");
+        background-repeat: no-repeat;
+        background-position: left 200px top 110px;
+        background-size: 600px;
+    }
+
+    .konten-customise {
+        background: url("element-underline.svg");
+        background-repeat: no-repeat;
+        background-position: left 230px top 120px;
+        background-size: 500px;
+    }
+
+    .work-together {
+        background: url("element-underline.svg");
+        background-repeat: no-repeat;
+        background-position: left 330px top 60px;
+        background-size: 400px;
+    }
+
+    .text-plan {
+        background: url("element-underline.svg") no-repeat;
+        background-position: right top 18px;
+        background-size: 400px;
+    }
+
+    .text-work {
+        background: url("element-underline-biru.svg") no-repeat;
+        background-position: left 10px top 105px;
+        background-size: 300px;
+    }
+
+    .text-sponsor {
+        background: url("element-underline.svg") no-repeat;
+        background-position: right 60px top 30px;
+        background-size: 400px;
+    }
+
+    .text-says {
+        background: url("underline-says.svg") no-repeat;
+        background-position: right 70px top 25px;
+        background-size: 160px;
+    }
+
+    .konten-data {
+        background: url("element-underline.svg") no-repeat;
+        background-position: left 330px top 65px;
+        background-size: 400px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    header {
+        max-width: 288px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 28px;
+    }
+
+    .konten_management p,
+    .konten-project p,
+    .work-together p,
+    .konten-extension p,
+    .menu-whitepace p,
+    .menu-product p,
+    .menu-resources p,
+    .menu-company p,
+    .menu-try p,
+    .konten-data p,
+    .footer-content p {
+        font-size: 13px;
+        max-width: 288px;
+    }
+
+    .konten-project h1,
+    .work-together h1,
+    .konten_management h1,
+    .konten-extension h1,
+    .konten-customise h1,
+    .konten-data h1,
+    .footer-content h1,
+    .konten-work h1 {
+        font-size: 40px;
+    }
+
+    .text-plan h1,
+    .text-sponsor h1,
+    .text-says h1 {
+        font-size: 40px;
+    }
+
+    .text-plan p {
+        font-size: 13px;
+    }
+
+    .text-work h1 {
+        text-align: left;
+        margin-top: 100px;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .text-work p {
+        text-align: left;
+        margin-top: 20px;
+        color: #fff;
+        line-height: 1.8;
+        font-size: 13px;
+    }
+
+    .konten-customise p {
+        font-size: 13px;
+    }
+
+    .konten-work p {
+        font-size: 14px;
+        width: 100%;
+        max-width: 288px;
+        padding-left: 17px;
+        line-height: 1.8;
+        color: #fff;
+    }
+
+    .card-free,
+    .card-personal,
+    .card-organization {
+        min-width: 290px;
+    }
+
+    .container-client {
+        min-width: 290px;
+    }
+
+    .menu-footer .container {
+        max-width: 288px;
+        text-align: center;
+    }
+
+    .menu-whitepace {
+        text-align: center;
+    }
+
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 288px;
+    }
+
+    .footer-left {
+        display: flex;
+    }
+
+    .footer-center {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .image-kosong,
+    .image-extension,
+    .image-project,
+    .image-customise,
+    .image-data,
+    .image-work,
+    .foto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-kosong img,
+    .image-project img,
+    .image-extension img,
+    .image-customise img,
+    .image-data img,
+    .image-work img,
+    .foto img {
+        width: 100%;
+        max-width: 290px;
+        height: auto;
+    }
+
+    .konten-extension {
+        background: url("element-underline.svg");
+        background-repeat: no-repeat;
+        background-position: left 58px top 90px;
+        background-size: 300px;
+    }
+
+    .konten-project {
+        background: url("element-underline.svg");
+        background-repeat: no-repeat;
+        background-position: left 40px top 80px;
+        background-size: 400px;
+    }
+
+    .konten-customise {
+        background: url("element-underline.svg");
+        background-repeat: no-repeat;
+        background-position: left 50px top 90px;
+        background-size: 350px;
+    }
+
+    .work-together {
+        background: url("element-underline.svg");
+        background-repeat: no-repeat;
+        background-position: left 130px top 50px;
+        background-size: 250px;
+    }
+
+    .text-plan {
+        background: url("element-underline.svg") no-repeat;
+        background-position: right 20px top 70px;
+        background-size: 200px;
+    }
+
+    .text-work {
+        background: url("element-underline-biru.svg") no-repeat;
+        background-position: left 10px top 105px;
+        background-size: 300px;
+    }
+
+    .text-sponsor {
+        background: url("element-underline.svg") no-repeat;
+        background-position: left 120px top 25px;
+        background-size: 250px;
+    }
+
+    .text-says {
+        background: url("underline-says.svg") no-repeat;
+        background-position: right 10px top 60px;
+        background-size: 130px;
+    }
+
+    .konten-data {
+        background: url("element-underline.svg") no-repeat;
+        background-position: left 130px top 50px;
+        background-size: 270px;
+    }
+
+    .btn-try-whitepace {
+        background: #4F9CF9;
+        color: white;
+        font-size: 13px;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .konten-customise p {
+        width: 100%;
+        max-width: 288px;
+        padding-left: 15px;
+    }
+
+    .text-plan p {
+        font-size: 13px;
+        padding-left: 15px;
+        width: 100%;
+        max-width: 288px;
     }
 }
