@@ -1,10 +1,27 @@
 body {
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     font-family: sans-serif;
     background: #043873;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container,
+.container-card,
+.container-sponsor,
+.footer-bottom,
+.menu-footer .container {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 100px 60px;
+    box-sizing: border-box;
+}
+
 
 .menu-humburger {
     display: none;
@@ -20,7 +37,7 @@ header {
     width: 100%;
     max-width: 1480px;
     margin: 0 auto;
-    padding: 10px 0px;
+    padding: 20px 60px;
 }
 
 .logo {
@@ -87,7 +104,6 @@ nav {
     width: 100%;
     max-width: 1480px;
     margin: 0 auto;
-    padding: 100px 0px;
     box-sizing: border-box;
 }
 
@@ -95,7 +111,12 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding: 100px 60px;
     gap: 80px;
+}
+
+.management {
+    padding: 100px 0;
 }
 
 .konten_management {
@@ -103,6 +124,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .image-kosong {
@@ -153,10 +175,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url("element-underline.svg");
-    background-repeat: no-repeat;
-    background-position: left top 140px;
-    background-size: 600px;
 }
 
 .image-project {
@@ -221,10 +239,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    background: url("element-underline.svg");
-    background-repeat: no-repeat;
-    background-position: left 170px top 80px;
-    background-size: 400px;
 }
 
 .work-together h1 {
@@ -240,13 +254,9 @@ nav {
     background: url("element-bulet-2.svg") no-repeat;
     background-position: left;
     background-size: 400px;
+    padding: 100px 0;
 }
 
-.text-work {
-    background: url("element-underline-biru.svg") no-repeat;
-    background-position: right 200px top 50px;
-    background-size: 300px;
-}
 
 .text-work h1 {
     text-align: center;
@@ -279,6 +289,7 @@ nav {
 
 .extension {
     color: white;
+    padding: 100px 0;
 }
 
 .extension .container {
@@ -292,10 +303,6 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    background: url("element-underline.svg");
-    background-repeat: no-repeat;
-    background-position: left 220px top 70px;
-    background-size: 500px;
 }
 
 .image-extension {
@@ -335,6 +342,7 @@ nav {
 
 .customise {
     background-color: white;
+    padding: 100px 0;
 }
 
 .customise .container {
@@ -355,12 +363,6 @@ nav {
     height: auto;
 }
 
-.konten-customise {
-    background: url("element-underline.svg");
-    background-repeat: no-repeat;
-    background-position: left top 145px;
-    background-size: 550px;
-}
 
 .konten-customise h1 {
     font-size: 64px;
@@ -384,11 +386,6 @@ nav {
     margin-left: 5px;
 }
 
-.text-plan {
-    background: url("element-underline.svg") no-repeat;
-    background-position: left 930px top 30px;
-    background-size: 470px;
-}
 
 .text-plan h1 {
     text-align: center;
@@ -406,7 +403,6 @@ nav {
 .container-card {
     max-width: 1480px;
     margin: 0 auto;
-    padding: 80px 0;
 }
 
 .card {
@@ -417,7 +413,7 @@ nav {
 
 .card-free,
 .card-organization {
-    width: 472px;
+    width: 100%;
     min-height: 498px;
     padding: 40px 30px;
     border: 1px solid #FFE492;
@@ -497,6 +493,7 @@ nav {
 
 .data {
     background-color: #fff;
+    padding: 100px 0;
 }
 
 .data .container {
@@ -521,9 +518,6 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    background: url("element-underline.svg") no-repeat;
-    background-position: left 170px top 75px;
-    background-size: 500px;
 }
 
 .konten-data h1 {
@@ -549,9 +543,7 @@ nav {
 }
 
 .container-sponsor {
-    max-width: 1480px;
-    margin: auto;
-    padding: 80px;
+    padding: 80px 60px;
 }
 
 .sponsor {
@@ -566,11 +558,6 @@ nav {
     height: auto;
 }
 
-.text-sponsor {
-    background: url("element-underline.svg") no-repeat;
-    background-position: right 550px top 25px;
-    background-size: 500px;
-}
 
 .text-sponsor h1 {
     text-align: center;
@@ -584,6 +571,10 @@ nav {
 
 .sponsor img:last-child {
     width: 120px;
+}
+
+.work {
+    padding: 100px 0;
 }
 
 .work .container {
@@ -644,12 +635,6 @@ nav {
     box-sizing: border-box;
 }
 
-.text-says {
-    background: url("underline-says.svg") no-repeat;
-    background-position: right 570px top 20px;
-    background-size: 220px;
-}
-
 .text-says h1 {
     font-size: 64px;
 }
@@ -660,7 +645,9 @@ nav {
 }
 
 .container-client {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
+    box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
     display: grid;
@@ -727,6 +714,7 @@ nav {
 
 .footer {
     margin-top: 100px;
+    overflow: hidden;
     color: #fff;
 }
 
@@ -780,8 +768,6 @@ nav {
 }
 
 .menu-footer .container {
-    max-width: 1480px;
-    margin: auto;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
     gap: 60px;
@@ -796,12 +782,6 @@ nav {
 }
 
 .footer-bottom {
-    max-width: 1480px;
-    margin: auto;
-    padding: 30px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-top: 1px solid #2e5b9a;
 }
 
@@ -817,11 +797,17 @@ nav {
 }
 
 .menu-whitepace {
-    width: 288px;
+    width: 100%;
+    max-width: 260px;
+}
+
+.menu-try p{
+    max-width:300px;
+    line-height:1.7;
+    margin-top: 15px;
 }
 
 .menu-product p,
-.menu-try p,
 .menu-resources p,
 .menu-company p {
     margin-top: 15px;
@@ -873,7 +859,7 @@ nav {
     .container-sponsor {
         max-width: 1376px;
         width: 100%;
-        padding: 80px 0px;
+        padding: 80px 60px;
     }
 
     .menu-footer .container {
@@ -882,7 +868,6 @@ nav {
 
     .footer-bottom {
         max-width: 1376px;
-        padding: 30px 0;
     }
 
     .card-free,
@@ -906,64 +891,6 @@ nav {
     .image-data img,
     .image-work img {
         max-width: 100%;
-    }
-
-    .konten-extension {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 150px top 50px;
-        background-size: 400px;
-    }
-
-    .konten-project {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left top 100px;
-        background-size: 500px;
-    }
-
-    .konten-customise {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left top 110px;
-        background-size: 400px;
-    }
-
-    .work-together {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 120px top 55px;
-        background-size: 350px;
-    }
-
-    .text-plan {
-        background: url("element-underline.svg") no-repeat;
-        background-position: left 700px top 25px;
-        background-size: 330px;
-    }
-
-    .text-work {
-        background: url("element-underline-biru.svg") no-repeat;
-        background-position: right 315px top 40px;
-        background-size: 200px;
-    }
-
-    .text-sponsor {
-        background: url("element-underline.svg") no-repeat;
-        background-position: right 430px top 25px;
-        background-size: 350px;
-    }
-
-    .text-says {
-        background: url("underline-says.svg") no-repeat;
-        background-position: right 390px top 19px;
-        background-size: 200px;
-    }
-
-    .konten-data {
-        background: url("element-underline.svg") no-repeat;
-        background-position: left 120px top 55px;
-        background-size: 400px;
     }
 
     .konten_management h1 {
@@ -1016,7 +943,6 @@ nav {
     .container-sponsor {
         max-width: 1088px;
         width: 100%;
-        padding: 80px 0px;
     }
 
     .menu-footer .container {
@@ -1025,65 +951,6 @@ nav {
 
     .footer-bottom {
         max-width: 1088px;
-        padding: 30px 0;
-    }
-
-    .konten-extension {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 130px top 40px;
-        background-size: 300px;
-    }
-
-    .konten-project {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 90px top 90px;
-        background-size: 300px;
-    }
-
-    .konten-customise {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left top 90px;
-        background-size: 300px;
-    }
-
-    .work-together {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 100px top 40px;
-        background-size: 300px;
-    }
-
-    .text-plan {
-        background: url("element-underline.svg") no-repeat;
-        background-position: left 550px top 18px;
-        background-size: 300px;
-    }
-
-    .text-work {
-        background: url("element-underline-biru.svg") no-repeat;
-        background-position: right 180px top 30px;
-        background-size: 150px;
-    }
-
-    .text-sponsor {
-        background: url("element-underline.svg") no-repeat;
-        background-position: right 340px top 20px;
-        background-size: 300px;
-    }
-
-    .text-says {
-        background: url("underline-says.svg") no-repeat;
-        background-position: right 340px top 17px;
-        background-size: 130px;
-    }
-
-    .konten-data {
-        background: url("element-underline.svg") no-repeat;
-        background-position: left 110px top 48px;
-        background-size: 300px;
     }
 
     .container-card {
@@ -1181,6 +1048,14 @@ nav {
         display: none;
     }
 
+    .container,
+    .container-card,
+    .container-sponsor,
+    .footer-bottom,
+    .menu-footer .container {
+        padding: 50px 24px;
+    }
+
     .btn-try-whitepace {
         background: #4F9CF9;
         color: white;
@@ -1253,7 +1128,7 @@ nav {
     }
 
     .container-client {
-        min-width: 350px;
+        flex: 0 0 340px;
     }
 
     .card {
@@ -1346,6 +1221,7 @@ nav {
         max-width: 728px;
         margin: auto;
         display: grid;
+        gap:40px;
         grid-template-columns: 1fr;
     }
 
@@ -1411,64 +1287,6 @@ nav {
 
     .btn-taskey {
         margin: 25px 0 50px 20px;
-    }
-
-    .konten-extension {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 350px top 60px;
-        background-size: 400px;
-    }
-
-    .konten-project {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 200px top 110px;
-        background-size: 600px;
-    }
-
-    .konten-customise {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 230px top 120px;
-        background-size: 500px;
-    }
-
-    .work-together {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 330px top 60px;
-        background-size: 400px;
-    }
-
-    .text-plan {
-        background: url("element-underline.svg") no-repeat;
-        background-position: right top 18px;
-        background-size: 400px;
-    }
-
-    .text-work {
-        background: url("element-underline-biru.svg") no-repeat;
-        background-position: left 10px top 105px;
-        background-size: 300px;
-    }
-
-    .text-sponsor {
-        background: url("element-underline.svg") no-repeat;
-        background-position: right 60px top 30px;
-        background-size: 400px;
-    }
-
-    .text-says {
-        background: url("underline-says.svg") no-repeat;
-        background-position: right 70px top 25px;
-        background-size: 160px;
-    }
-
-    .konten-data {
-        background: url("element-underline.svg") no-repeat;
-        background-position: left 330px top 65px;
-        background-size: 400px;
     }
 }
 
@@ -1621,64 +1439,6 @@ nav {
         width: 100%;
         max-width: 290px;
         height: auto;
-    }
-
-    .konten-extension {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 58px top 90px;
-        background-size: 300px;
-    }
-
-    .konten-project {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 40px top 80px;
-        background-size: 400px;
-    }
-
-    .konten-customise {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 50px top 90px;
-        background-size: 350px;
-    }
-
-    .work-together {
-        background: url("element-underline.svg");
-        background-repeat: no-repeat;
-        background-position: left 130px top 50px;
-        background-size: 250px;
-    }
-
-    .text-plan {
-        background: url("element-underline.svg") no-repeat;
-        background-position: right 20px top 70px;
-        background-size: 200px;
-    }
-
-    .text-work {
-        background: url("element-underline-biru.svg") no-repeat;
-        background-position: left 10px top 105px;
-        background-size: 300px;
-    }
-
-    .text-sponsor {
-        background: url("element-underline.svg") no-repeat;
-        background-position: left 120px top 25px;
-        background-size: 250px;
-    }
-
-    .text-says {
-        background: url("underline-says.svg") no-repeat;
-        background-position: right 10px top 60px;
-        background-size: 130px;
-    }
-
-    .konten-data {
-        background: url("element-underline.svg") no-repeat;
-        background-position: left 130px top 50px;
-        background-size: 270px;
     }
 
     .btn-try-whitepace {
