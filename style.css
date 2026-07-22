@@ -96,7 +96,7 @@ nav {
 }
 
 .hero {
-    background: url("element_garis.svg") no-repeat right center;
+    background: url("assets/svg/element_garis.svg") no-repeat right center;
     background-size: cover;
 }
 
@@ -124,7 +124,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
 }
 
 .image-kosong {
@@ -198,7 +197,7 @@ nav {
 }
 
 .hero-bulet {
-    background: url("element-bulet.svg");
+    background: url("assets/svg/element-bulet.svg");
     background-repeat: no-repeat;
     background-position: left top 100px;
     background-size: 300px;
@@ -251,7 +250,7 @@ nav {
 }
 
 .work-everywhere {
-    background: url("element-bulet-2.svg") no-repeat;
+    background: url("assets/svg/element-bulet-2.svg") no-repeat;
     background-position: left;
     background-size: 400px;
     padding: 100px 0;
